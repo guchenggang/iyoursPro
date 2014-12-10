@@ -18,6 +18,12 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     NSLog(@"test");
+    
+    
+    UIButton *btn = [[UIButton alloc] init];
+    
+    
+    
     return YES;
 }
 
