@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6FBE48C61A37FBF3003E490E /* MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FBE48C51A37FBF3003E490E /* MainTabBarController.m */; };
+		6FBE48CA1A37FC60003E490E /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FBE48C81A37FC60003E490E /* HomeViewController.m */; };
+		6FBE48CB1A37FC60003E490E /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FBE48C91A37FC60003E490E /* HomeViewController.xib */; };
+		6FBE48CF1A37FC81003E490E /* DownLoadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FBE48CD1A37FC81003E490E /* DownLoadViewController.m */; };
+		6FBE48D01A37FC81003E490E /* DownLoadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FBE48CE1A37FC81003E490E /* DownLoadViewController.xib */; };
+		6FBE48D41A37FCCF003E490E /* PlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FBE48D21A37FCCF003E490E /* PlayViewController.m */; };
+		6FBE48D51A37FCCF003E490E /* PlayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FBE48D31A37FCCF003E490E /* PlayViewController.xib */; };
+		6FBE48D91A37FD67003E490E /* UIColor+StringColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FBE48D81A37FD67003E490E /* UIColor+StringColor.m */; };
+		6FBE48DC1A37FD88003E490E /* NSString+Addtion.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FBE48DB1A37FD88003E490E /* NSString+Addtion.m */; };
+		6FBE48EF1A381BC1003E490E /* download_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FBE48E91A381BC1003E490E /* download_normal.png */; };
+		6FBE48F01A381BC1003E490E /* download_select.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FBE48EA1A381BC1003E490E /* download_select.png */; };
+		6FBE48F11A381BC1003E490E /* home_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FBE48EB1A381BC1003E490E /* home_normal.png */; };
+		6FBE48F21A381BC1003E490E /* play_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FBE48EC1A381BC1003E490E /* play_normal.png */; };
+		6FBE48F31A381BC1003E490E /* play_select.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FBE48ED1A381BC1003E490E /* play_select.png */; };
+		6FBE48F41A381BC1003E490E /* home_select.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FBE48EE1A381BC1003E490E /* home_select.png */; };
 		C49D26B51A3591E100FA192F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C49D26B41A3591E100FA192F /* main.m */; };
 		C49D26B81A3591E100FA192F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C49D26B71A3591E100FA192F /* AppDelegate.m */; };
 		C49D26C01A3591E100FA192F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C49D26BF1A3591E100FA192F /* Images.xcassets */; };
@@ -25,6 +40,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6FBE48C41A37FBF3003E490E /* MainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarController.h; sourceTree = "<group>"; };
+		6FBE48C51A37FBF3003E490E /* MainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarController.m; sourceTree = "<group>"; };
+		6FBE48C71A37FC60003E490E /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		6FBE48C81A37FC60003E490E /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		6FBE48C91A37FC60003E490E /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		6FBE48CC1A37FC81003E490E /* DownLoadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownLoadViewController.h; sourceTree = "<group>"; };
+		6FBE48CD1A37FC81003E490E /* DownLoadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownLoadViewController.m; sourceTree = "<group>"; };
+		6FBE48CE1A37FC81003E490E /* DownLoadViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DownLoadViewController.xib; sourceTree = "<group>"; };
+		6FBE48D11A37FCCF003E490E /* PlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayViewController.h; sourceTree = "<group>"; };
+		6FBE48D21A37FCCF003E490E /* PlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayViewController.m; sourceTree = "<group>"; };
+		6FBE48D31A37FCCF003E490E /* PlayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayViewController.xib; sourceTree = "<group>"; };
+		6FBE48D71A37FD67003E490E /* UIColor+StringColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+StringColor.h"; sourceTree = "<group>"; };
+		6FBE48D81A37FD67003E490E /* UIColor+StringColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+StringColor.m"; sourceTree = "<group>"; };
+		6FBE48DA1A37FD88003E490E /* NSString+Addtion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Addtion.h"; sourceTree = "<group>"; };
+		6FBE48DB1A37FD88003E490E /* NSString+Addtion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Addtion.m"; sourceTree = "<group>"; };
+		6FBE48E91A381BC1003E490E /* download_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = download_normal.png; sourceTree = "<group>"; };
+		6FBE48EA1A381BC1003E490E /* download_select.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = download_select.png; sourceTree = "<group>"; };
+		6FBE48EB1A381BC1003E490E /* home_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_normal.png; sourceTree = "<group>"; };
+		6FBE48EC1A381BC1003E490E /* play_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play_normal.png; sourceTree = "<group>"; };
+		6FBE48ED1A381BC1003E490E /* play_select.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play_select.png; sourceTree = "<group>"; };
+		6FBE48EE1A381BC1003E490E /* home_select.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_select.png; sourceTree = "<group>"; };
 		C49D26AF1A3591E100FA192F /* iyours.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iyours.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C49D26B31A3591E100FA192F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C49D26B41A3591E100FA192F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -55,6 +91,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6FBE48D61A37FD47003E490E /* util */ = {
+			isa = PBXGroup;
+			children = (
+				6FBE48DA1A37FD88003E490E /* NSString+Addtion.h */,
+				6FBE48DB1A37FD88003E490E /* NSString+Addtion.m */,
+				6FBE48D71A37FD67003E490E /* UIColor+StringColor.h */,
+				6FBE48D81A37FD67003E490E /* UIColor+StringColor.m */,
+			);
+			name = util;
+			sourceTree = "<group>";
+		};
+		6FBE48F51A381C5E003E490E /* res */ = {
+			isa = PBXGroup;
+			children = (
+				6FBE48E91A381BC1003E490E /* download_normal.png */,
+				6FBE48EA1A381BC1003E490E /* download_select.png */,
+				6FBE48EB1A381BC1003E490E /* home_normal.png */,
+				6FBE48EC1A381BC1003E490E /* play_normal.png */,
+				6FBE48ED1A381BC1003E490E /* play_select.png */,
+				6FBE48EE1A381BC1003E490E /* home_select.png */,
+			);
+			name = res;
+			sourceTree = "<group>";
+		};
 		C49D26A61A3591E000FA192F = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +141,19 @@
 				C49D26BF1A3591E100FA192F /* Images.xcassets */,
 				C49D26C11A3591E100FA192F /* LaunchScreen.xib */,
 				C49D26B21A3591E100FA192F /* Supporting Files */,
+				6FBE48C41A37FBF3003E490E /* MainTabBarController.h */,
+				6FBE48C51A37FBF3003E490E /* MainTabBarController.m */,
+				6FBE48C71A37FC60003E490E /* HomeViewController.h */,
+				6FBE48C81A37FC60003E490E /* HomeViewController.m */,
+				6FBE48C91A37FC60003E490E /* HomeViewController.xib */,
+				6FBE48CC1A37FC81003E490E /* DownLoadViewController.h */,
+				6FBE48CD1A37FC81003E490E /* DownLoadViewController.m */,
+				6FBE48CE1A37FC81003E490E /* DownLoadViewController.xib */,
+				6FBE48D11A37FCCF003E490E /* PlayViewController.h */,
+				6FBE48D21A37FCCF003E490E /* PlayViewController.m */,
+				6FBE48D31A37FCCF003E490E /* PlayViewController.xib */,
+				6FBE48F51A381C5E003E490E /* res */,
+				6FBE48D61A37FD47003E490E /* util */,
 			);
 			path = iyours;
 			sourceTree = "<group>";
@@ -192,7 +265,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				C49D26C31A3591E100FA192F /* LaunchScreen.xib in Resources */,
+				6FBE48F31A381BC1003E490E /* play_select.png in Resources */,
 				C49D26C01A3591E100FA192F /* Images.xcassets in Resources */,
+				6FBE48F41A381BC1003E490E /* home_select.png in Resources */,
+				6FBE48EF1A381BC1003E490E /* download_normal.png in Resources */,
+				6FBE48F11A381BC1003E490E /* home_normal.png in Resources */,
+				6FBE48D01A37FC81003E490E /* DownLoadViewController.xib in Resources */,
+				6FBE48F21A381BC1003E490E /* play_normal.png in Resources */,
+				6FBE48CB1A37FC60003E490E /* HomeViewController.xib in Resources */,
+				6FBE48D51A37FCCF003E490E /* PlayViewController.xib in Resources */,
+				6FBE48F01A381BC1003E490E /* download_select.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,6 +294,12 @@
 			files = (
 				C49D26B81A3591E100FA192F /* AppDelegate.m in Sources */,
 				C49D26B51A3591E100FA192F /* main.m in Sources */,
+				6FBE48C61A37FBF3003E490E /* MainTabBarController.m in Sources */,
+				6FBE48DC1A37FD88003E490E /* NSString+Addtion.m in Sources */,
+				6FBE48CA1A37FC60003E490E /* HomeViewController.m in Sources */,
+				6FBE48D41A37FCCF003E490E /* PlayViewController.m in Sources */,
+				6FBE48D91A37FD67003E490E /* UIColor+StringColor.m in Sources */,
+				6FBE48CF1A37FC81003E490E /* DownLoadViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
