@@ -34,6 +34,7 @@
     
     //第一个界面
     HomeViewController *home = [[HomeViewController alloc] initWithNibName:@"HomeViewController" bundle:nil];
+    
     //设置默认图片
     UIImage *image1 = [[UIImage imageNamed:@"home_normal"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     //设置选中图片
@@ -44,6 +45,8 @@
     //item1.badgeValue = @"2";
     //设置第一个界面的tabBarItem
     home.tabBarItem = item1;
+//    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:home];
+
     
     //第二个界面
     DownLoadViewController *download = [[DownLoadViewController alloc] initWithNibName:@"DownLoadViewController" bundle:nil];
