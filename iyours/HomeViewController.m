@@ -7,6 +7,8 @@
 //
 
 #import "HomeViewController.h"
+#import "ASIFormDataRequest.h"
+#import "NSString+Addtion.h"
 
 @interface HomeViewController ()
 
@@ -34,4 +36,40 @@
 }
 */
 
+
+- (IBAction)onClick:(UIButton *)sender {
+    NSURL *url = [NSURL URLWithString:@"http://www.iyours.com.cn/mobile/index/login/"];
+    //    NSURL *url = [NSURL URLWithString:@"http://www.baidu.com"];
+    
+    //    ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
+    ASIFormDataRequest *request=[ASIFormDataRequest requestWithURL:url];
+    [request setPostValue:@"王嵩"  forKey:@"userName"];
+    [request setPostValue:@"123456" forKey:@"password"];
+    [request setDelegate:self];
+    [request startAsynchronous];
+}
+
+- (void)requestFinished:(ASIHTTPRequest *)request
+{
+    
+    
+    // 获取文本数据时使用
+    NSString *responseString = [request responseString];
+    
+    
+    NSMutableDictionary *dict = [responseString JSONValue];
+    NSNumber *state = [dict objectForKey:@"state"];
+    
+    NSArray *array = [dict allValues];
+    NSLog(@"responseString = %@" , responseString);
+    NSLog(@"dict = %@" , dict);
+    NSLog(@"state = %@" , state);
+    NSLog(@"array = %@" , array);
+    
+    
+    // 在抓取时使用二进制数据
+    //    NSData *responseData = [request responseData];
+    //    NSLog(@"responseData = %@" , responseData);
+    
+}
 @end
