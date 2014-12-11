@@ -8,6 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HomeViewController : UIViewController
+@interface HomeViewController : UIViewController<UIScrollViewDelegate , UIActionSheetDelegate>
+
+
+@property (strong, nonatomic) IBOutlet UIButton *courseBtn;
+- (IBAction)settingBtnClick:(UIButton *)sender;
+@property (strong, nonatomic) IBOutlet UIScrollView *scrollview;
+@property (strong, nonatomic) IBOutlet UIPageControl *pageControl;
+@property (strong, nonatomic) IBOutlet UIButton *searchBtn;
+
+@property (nonatomic, strong) NSTimer *timer;
 
 @end
