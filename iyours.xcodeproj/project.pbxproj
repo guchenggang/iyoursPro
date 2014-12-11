@@ -26,6 +26,14 @@
 		6F4D11571A3867CF0075AEFB /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F4D11471A3867CF0075AEFB /* UIView+WebCacheOperation.m */; };
 		6F4D11591A3867EC0075AEFB /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F4D11581A3867EC0075AEFB /* ImageIO.framework */; };
 		6F4D115B1A3867F50075AEFB /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F4D115A1A3867F50075AEFB /* MapKit.framework */; };
+		6F8A18C21A39ACB0003E5859 /* ResourceCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F8A18C11A39ACB0003E5859 /* ResourceCategory.m */; };
+		6F8A18D71A39B439003E5859 /* UIGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F8A18D11A39B439003E5859 /* UIGridView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6F8A18D81A39B439003E5859 /* UIGridViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F8A18D31A39B439003E5859 /* UIGridViewCell.m */; };
+		6F8A18D91A39B439003E5859 /* UIGridViewRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F8A18D61A39B439003E5859 /* UIGridViewRow.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6F8A18DB1A39B783003E5859 /* speed.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F8A18DA1A39B783003E5859 /* speed.png */; };
+		6F8A18DD1A39B79C003E5859 /* history.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F8A18DC1A39B79C003E5859 /* history.png */; };
+		6F8A18F01A39C29D003E5859 /* Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F8A18EE1A39C29D003E5859 /* Cell.m */; };
+		6F8A18F11A39C29D003E5859 /* Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F8A18EF1A39C29D003E5859 /* Cell.xib */; };
 		6FBE48C61A37FBF3003E490E /* MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FBE48C51A37FBF3003E490E /* MainTabBarController.m */; };
 		6FBE48CA1A37FC60003E490E /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FBE48C81A37FC60003E490E /* HomeViewController.m */; };
 		6FBE48CB1A37FC60003E490E /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FBE48C91A37FC60003E490E /* HomeViewController.xib */; };
@@ -127,6 +135,20 @@
 		6F4D11471A3867CF0075AEFB /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
 		6F4D11581A3867EC0075AEFB /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		6F4D115A1A3867F50075AEFB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		6F8A18C01A39ACB0003E5859 /* ResourceCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResourceCategory.h; sourceTree = "<group>"; };
+		6F8A18C11A39ACB0003E5859 /* ResourceCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResourceCategory.m; sourceTree = "<group>"; };
+		6F8A18D01A39B439003E5859 /* UIGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIGridView.h; sourceTree = "<group>"; };
+		6F8A18D11A39B439003E5859 /* UIGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIGridView.m; sourceTree = "<group>"; };
+		6F8A18D21A39B439003E5859 /* UIGridViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIGridViewCell.h; sourceTree = "<group>"; };
+		6F8A18D31A39B439003E5859 /* UIGridViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIGridViewCell.m; sourceTree = "<group>"; };
+		6F8A18D41A39B439003E5859 /* UIGridViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIGridViewDelegate.h; sourceTree = "<group>"; };
+		6F8A18D51A39B439003E5859 /* UIGridViewRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIGridViewRow.h; sourceTree = "<group>"; };
+		6F8A18D61A39B439003E5859 /* UIGridViewRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIGridViewRow.m; sourceTree = "<group>"; };
+		6F8A18DA1A39B783003E5859 /* speed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = speed.png; sourceTree = "<group>"; };
+		6F8A18DC1A39B79C003E5859 /* history.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = history.png; sourceTree = "<group>"; };
+		6F8A18ED1A39C29D003E5859 /* Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cell.h; sourceTree = "<group>"; };
+		6F8A18EE1A39C29D003E5859 /* Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cell.m; sourceTree = "<group>"; };
+		6F8A18EF1A39C29D003E5859 /* Cell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Cell.xib; sourceTree = "<group>"; };
 		6FBE48C41A37FBF3003E490E /* MainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarController.h; sourceTree = "<group>"; };
 		6FBE48C51A37FBF3003E490E /* MainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarController.m; sourceTree = "<group>"; };
 		6FBE48C71A37FC60003E490E /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
@@ -287,6 +309,29 @@
 			path = SDWebImage;
 			sourceTree = "<group>";
 		};
+		6F8A18BF1A39AC78003E5859 /* Bean */ = {
+			isa = PBXGroup;
+			children = (
+				6F8A18C01A39ACB0003E5859 /* ResourceCategory.h */,
+				6F8A18C11A39ACB0003E5859 /* ResourceCategory.m */,
+			);
+			name = Bean;
+			sourceTree = "<group>";
+		};
+		6F8A18CF1A39B439003E5859 /* UIGridView */ = {
+			isa = PBXGroup;
+			children = (
+				6F8A18D01A39B439003E5859 /* UIGridView.h */,
+				6F8A18D11A39B439003E5859 /* UIGridView.m */,
+				6F8A18D21A39B439003E5859 /* UIGridViewCell.h */,
+				6F8A18D31A39B439003E5859 /* UIGridViewCell.m */,
+				6F8A18D41A39B439003E5859 /* UIGridViewDelegate.h */,
+				6F8A18D51A39B439003E5859 /* UIGridViewRow.h */,
+				6F8A18D61A39B439003E5859 /* UIGridViewRow.m */,
+			);
+			path = UIGridView;
+			sourceTree = "<group>";
+		};
 		6FBE48D61A37FD47003E490E /* util */ = {
 			isa = PBXGroup;
 			children = (
@@ -301,6 +346,8 @@
 		6FBE48F51A381C5E003E490E /* res */ = {
 			isa = PBXGroup;
 			children = (
+				6F8A18DC1A39B79C003E5859 /* history.png */,
+				6F8A18DA1A39B783003E5859 /* speed.png */,
 				6FCDE1BB1A385B73000799E9 /* search_flag_image.png */,
 				6FCDE1B51A385A02000799E9 /* bg_setting_off.png */,
 				6FCDE1B61A385A02000799E9 /* bg_setting_on.png */,
@@ -465,6 +512,7 @@
 		C49D26B11A3591E100FA192F /* iyours */ = {
 			isa = PBXGroup;
 			children = (
+				6F8A18CF1A39B439003E5859 /* UIGridView */,
 				6F4D11261A3867CF0075AEFB /* SDWebImage */,
 				6FBE49561A381ED7003E490E /* Frameworks */,
 				6FBE48FE1A381DCE003E490E /* Classes */,
@@ -485,6 +533,10 @@
 				6FBE48D11A37FCCF003E490E /* PlayViewController.h */,
 				6FBE48D21A37FCCF003E490E /* PlayViewController.m */,
 				6FBE48D31A37FCCF003E490E /* PlayViewController.xib */,
+				6F8A18ED1A39C29D003E5859 /* Cell.h */,
+				6F8A18EE1A39C29D003E5859 /* Cell.m */,
+				6F8A18EF1A39C29D003E5859 /* Cell.xib */,
+				6F8A18BF1A39AC78003E5859 /* Bean */,
 				6FBE48F51A381C5E003E490E /* res */,
 				6FBE48D61A37FD47003E490E /* util */,
 			);
@@ -610,6 +662,9 @@
 				6FCDE1B81A385A02000799E9 /* bg_setting_on.png in Resources */,
 				6FBE48D51A37FCCF003E490E /* PlayViewController.xib in Resources */,
 				6FCDE1BC1A385B73000799E9 /* search_flag_image.png in Resources */,
+				6F8A18F11A39C29D003E5859 /* Cell.xib in Resources */,
+				6F8A18DB1A39B783003E5859 /* speed.png in Resources */,
+				6F8A18DD1A39B79C003E5859 /* history.png in Resources */,
 				6FBE48F01A381BC1003E490E /* download_select.png in Resources */,
 				6FBE48FC1A381DC5003E490E /* README-GHUnit in Resources */,
 			);
@@ -629,6 +684,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F8A18D71A39B439003E5859 /* UIGridView.m in Sources */,
 				C49D26B81A3591E100FA192F /* AppDelegate.m in Sources */,
 				6F4D11501A3867CF0075AEFB /* SDWebImagePrefetcher.m in Sources */,
 				6F4D11571A3867CF0075AEFB /* UIView+WebCacheOperation.m in Sources */,
@@ -641,6 +697,7 @@
 				6FBE493A1A381DCE003E490E /* ASIInputStream.m in Sources */,
 				6FBE493E1A381DCE003E490E /* ASICloudFilesContainer.m in Sources */,
 				6FBE49421A381DCE003E490E /* ASICloudFilesObjectRequest.m in Sources */,
+				6F8A18F01A39C29D003E5859 /* Cell.m in Sources */,
 				6FBE493D1A381DCE003E490E /* ASICloudFilesCDNRequest.m in Sources */,
 				6F4D11491A3867CF0075AEFB /* NSData+ImageContentType.m in Sources */,
 				6F4D11521A3867CF0075AEFB /* UIImage+GIF.m in Sources */,
@@ -651,6 +708,7 @@
 				6F4D11551A3867CF0075AEFB /* UIImageView+HighlightedWebCache.m in Sources */,
 				6FBE49491A381DCE003E490E /* ASIS3ServiceRequest.m in Sources */,
 				6FBE49481A381DCE003E490E /* ASIS3Request.m in Sources */,
+				6F8A18D91A39B439003E5859 /* UIGridViewRow.m in Sources */,
 				6F4D114C1A3867CF0075AEFB /* SDWebImageDecoder.m in Sources */,
 				6F4D114F1A3867CF0075AEFB /* SDWebImageManager.m in Sources */,
 				6FBE48CA1A37FC60003E490E /* HomeViewController.m in Sources */,
@@ -664,7 +722,9 @@
 				6FBE49401A381DCE003E490E /* ASICloudFilesContainerXMLParserDelegate.m in Sources */,
 				6FBE49351A381DCE003E490E /* ASIDataCompressor.m in Sources */,
 				6FBE493C1A381DCE003E490E /* ASIWebPageRequest.m in Sources */,
+				6F8A18C21A39ACB0003E5859 /* ResourceCategory.m in Sources */,
 				6FBE48FD1A381DC5003E490E /* Reachability.m in Sources */,
+				6F8A18D81A39B439003E5859 /* UIGridViewCell.m in Sources */,
 				6F4D11511A3867CF0075AEFB /* UIButton+WebCache.m in Sources */,
 				6FBE49461A381DCE003E490E /* ASIS3BucketRequest.m in Sources */,
 				6FBE49371A381DCE003E490E /* ASIDownloadCache.m in Sources */,

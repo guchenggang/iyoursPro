@@ -11,6 +11,7 @@
 #import "NSString+Addtion.h"
 #import "UIImageView+WebCache.h"
 #import "UIColor+StringColor.h"
+#import "Cell.h"
 
 @interface HomeViewController ()
 
@@ -30,6 +31,12 @@
     [_courseBtn.layer setBorderColor:colorref];//边框颜色
     
     [_courseBtn addTarget:self action:@selector(courseChose) forControlEvents:UIControlEventTouchUpInside];
+    
+    
+    [_speedBtn.layer setCornerRadius:8.0];
+    
+    [_recordBtn.layer setCornerRadius:8.0];
+
     
     [_searchBtn.layer setCornerRadius:15];
     [self.searchBtn addTarget:self action:@selector(search) forControlEvents:UIControlEventTouchUpInside];
@@ -88,7 +95,6 @@
     self.scrollview.delegate = self;
     
     [self addTimer];
-    
     
     
 }
@@ -211,4 +217,46 @@
     
     NSLog(@"跳转设置界面");
 }
+
+- (CGFloat) gridView:(UIGridView *)grid widthForColumnAt:(int)columnIndex
+{
+
+    return 120;
+}
+
+- (CGFloat) gridView:(UIGridView *)grid heightForRowAt:(int)rowIndex
+{
+    return 90;
+}
+
+- (NSInteger) numberOfColumnsOfGridView:(UIGridView *) grid
+{
+    return 3;
+}
+
+
+- (NSInteger) numberOfCellsOfGridView:(UIGridView *) grid
+
+{
+    return 7;
+}
+
+- (UIGridViewCell *) gridView:(UIGridView *)grid cellForRowAt:(int)rowIndex AndColumnAt:(int)columnIndex
+{
+    Cell *cell = (Cell *)[grid dequeueReusableCell];
+    
+    if (cell == nil) {
+        cell = [[Cell alloc] init];
+    }
+    
+    cell.label.text = [NSString stringWithFormat:@"(%d,%d)", rowIndex, columnIndex];
+    
+    return cell;
+}
+
+- (void) gridView:(UIGridView *)grid didSelectRowAt:(int)rowIndex AndColumnAt:(int)colIndex
+{
+    NSLog(@"%d, %d clicked", rowIndex, colIndex);
+}
+
 @end
