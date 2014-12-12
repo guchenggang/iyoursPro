@@ -25,4 +25,6 @@
 @property (strong, nonatomic) IBOutlet UIButton *recordBtn;
 
 @property (strong, nonatomic) IBOutlet UIButton *speedBtn;
+
+@property (strong , nonatomic) NSMutableArray *array;
 @end

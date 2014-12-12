@@ -12,6 +12,16 @@
 #import "UIImageView+WebCache.h"
 #import "UIColor+StringColor.h"
 #import "Cell.h"
+#import "DLLWaitingView.h"
+#import "MBProgressHUD+Toast.h"
+#import "ResourceCategory.h"
+
+//手机屏幕的宽
+#define  SCREENWIDTH [[UIScreen mainScreen] bounds].size.width
+
+//手机屏幕的高
+#define  SCREENHEIGHT [[UIScreen mainScreen] bounds].size.height
+
 
 @interface HomeViewController ()
 
@@ -21,6 +31,54 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    ResourceCategory *res1 = [[ResourceCategory alloc] init];
+    res1.rescateId = @"549";
+    res1.rescateName = @"二级培训";
+    res1.resId = @"8001";
+    res1.logoUrl = @"http://www.iyours.com.cn/staticback/resource/c_267.png";
+    
+    ResourceCategory *res2 = [[ResourceCategory alloc] init];
+    res2.rescateId = @"114";
+    res2.rescateName = @"游戏分析";
+    res2.resId = @"8001";
+    res2.logoUrl = @"http://www.iyours.com.cn/staticback/resource/c_105.png";
+    
+    ResourceCategory *res3 = [[ResourceCategory alloc] init];
+    res3.rescateId = @"417";
+    res3.rescateName = @"游戏教案";
+    res3.resId = @"8001";
+    res3.logoUrl = @"http://www.iyours.com.cn/staticback/resource/c_104.png";
+    
+    ResourceCategory *res4 = [[ResourceCategory alloc] init];
+    res4.rescateId = @"112";
+    res4.rescateName = @"游戏课件";
+    res4.resId = @"8001";
+    res4.logoUrl = @"http://www.iyours.com.cn/staticback/resource/c_103.png";
+    
+    ResourceCategory *res5 = [[ResourceCategory alloc] init];
+    res5.rescateId = @"267";
+    res5.rescateName = @"游戏资源";
+    res5.resId = @"8001";
+    res5.logoUrl = @"http://www.iyours.com.cn/staticback/resource/c_267.png";
+    
+    ResourceCategory *res6 = [[ResourceCategory alloc] init];
+    res6.rescateId = @"514";
+    res6.rescateName = @"课程实录";
+    res6.resId = @"8001";
+    res6.logoUrl = @"http://www.iyours.com.cn/staticback/resource/c_215.png";
+    
+    ResourceCategory *res7 = [[ResourceCategory alloc] init];
+    res7.rescateId = @"0";
+    res7.rescateName = @"公共资源";
+    res7.resId = @"8001";
+    res7.logoUrl = @"http://www.iyours.com.cn/staticback/resource/c_370.png";
+    
+    
+
+    
+    
+    self.array = [NSMutableArray arrayWithObjects:res1 ,res2 ,res3 ,res4 ,res5 ,res6 ,res7 ,  nil];
 //    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:self];
     
     [_courseBtn.layer setMasksToBounds:YES];
@@ -34,15 +92,16 @@
     
     
     [_speedBtn.layer setCornerRadius:8.0];
+    [_speedBtn addTarget:self action:@selector(speed) forControlEvents:UIControlEventTouchUpInside];
     
     [_recordBtn.layer setCornerRadius:8.0];
-
+    [_recordBtn addTarget:self action:@selector(record) forControlEvents:UIControlEventTouchUpInside];
     
     [_searchBtn.layer setCornerRadius:15];
     [self.searchBtn addTarget:self action:@selector(search) forControlEvents:UIControlEventTouchUpInside];
     
     //图片的宽
-    CGFloat imageW = self.scrollview.frame.size.width;
+    CGFloat imageW = SCREENWIDTH;
     
     //图片高
     CGFloat imageH = self.scrollview.frame.size.height;
@@ -74,7 +133,7 @@
         
         
         //隐藏指示条
-        self.scrollview.showsHorizontalScrollIndicator = NO;
+        self.scrollview.showsHorizontalScrollIndicator = YES;
         [self.scrollview addSubview:imageView];
     }
     
@@ -91,12 +150,26 @@
     
     self.pageControl.currentPage = 0;
     
+    [self.view addSubview:self.pageControl];
+    
+    
     //监听scrollview的滚动
     self.scrollview.delegate = self;
     
     [self addTimer];
     
     
+}
+
+-(void)speed
+{
+    NSLog(@"speed");
+    [DLLWaitingView showWithAnimated:YES];
+}
+
+-(void)record
+{
+    [MBProgressHUD toastText:@"12345"];
 }
 
 -(void)courseChose
@@ -221,24 +294,24 @@
 - (CGFloat) gridView:(UIGridView *)grid widthForColumnAt:(int)columnIndex
 {
 
-    return 120;
+    return [UIScreen mainScreen].bounds.size.width / 4.3;
 }
 
 - (CGFloat) gridView:(UIGridView *)grid heightForRowAt:(int)rowIndex
 {
-    return 90;
+    return [UIScreen mainScreen].bounds.size.height / 7;
 }
 
 - (NSInteger) numberOfColumnsOfGridView:(UIGridView *) grid
 {
-    return 3;
+    return 4;
 }
 
 
 - (NSInteger) numberOfCellsOfGridView:(UIGridView *) grid
 
 {
-    return 7;
+    return self.array.count;
 }
 
 - (UIGridViewCell *) gridView:(UIGridView *)grid cellForRowAt:(int)rowIndex AndColumnAt:(int)columnIndex
@@ -249,7 +322,13 @@
         cell = [[Cell alloc] init];
     }
     
-    cell.label.text = [NSString stringWithFormat:@"(%d,%d)", rowIndex, columnIndex];
+    if(columnIndex == 4){
+        
+    }
+    ResourceCategory *rc =  self.array[columnIndex];
+    cell.label.text = rc.rescateName;
+    UIImageView *image = cell.thumbnail;
+    [image sd_setImageWithURL:rc.logoUrl];
     
     return cell;
 }

@@ -36,7 +36,7 @@
 					<object class="IBUIImageView" id="601756086">
 						<reference key="NSNextResponder" ref="1031505805"/>
 						<int key="NSvFlags">274</int>
-						<string key="NSFrame">{{15, 8}, {50, 46}}</string>
+						<string key="NSFrame">{{15, 13}, {30, 26}}</string>
 						<reference key="NSSuperview" ref="1031505805"/>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -48,7 +48,7 @@
 					<object class="IBUILabel" id="499196190">
 						<reference key="NSNextResponder" ref="1031505805"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{0, 56}, {80, 16}}</string>
+						<string key="NSFrame">{{-10, 42}, {80, 19}}</string>
 						<reference key="NSSuperview" ref="1031505805"/>
 						<reference key="NSNextKeyView" ref="601756086"/>
 						<bool key="IBUIOpaque">NO</bool>
@@ -83,11 +83,11 @@
 						<bool key="useAutomaticPreferredMaxLayoutWidth">YES</bool>
 					</object>
 				</array>
-				<string key="NSFrameSize">{80, 80}</string>
+				<string key="NSFrameSize">{60, 61}</string>
 				<reference key="NSNextKeyView" ref="499196190"/>
 				<object class="NSColor" key="IBUIBackgroundColor">
 					<int key="NSColorSpace">1</int>
-					<bytes key="NSRGB">MCAwLjUwMTk2MDgxNCAwAA</bytes>
+					<bytes key="NSRGB">MSAwLjUgMAA</bytes>
 				</object>
 				<object class="IBUISimulatedSizeMetrics" key="IBUISimulatedDestinationMetrics">
 					<string key="IBUISimulatedSizeMetricsClass">IBUISimulatedFreeformSizeMetricsSentinel</string>
@@ -170,6 +170,7 @@
 				<string key="-2.CustomClassName">UIResponder</string>
 				<string key="-2.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<reference key="2.IBNSViewMetadataGestureRecognizers" ref="0"/>
+				<string key="2.IBPersistedLastKnownCanvasPosition">{565, 384.5}</string>
 				<string key="2.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="3.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="6.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>

@@ -26,6 +26,14 @@
 		6F4D11571A3867CF0075AEFB /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F4D11471A3867CF0075AEFB /* UIView+WebCacheOperation.m */; };
 		6F4D11591A3867EC0075AEFB /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F4D11581A3867EC0075AEFB /* ImageIO.framework */; };
 		6F4D115B1A3867F50075AEFB /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F4D115A1A3867F50075AEFB /* MapKit.framework */; };
+		6F662BE11A3A8A54000A8A7C /* CustomProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F662BDC1A3A8A54000A8A7C /* CustomProgress.m */; };
+		6F662BE21A3A8A54000A8A7C /* DLLMaskWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F662BDE1A3A8A54000A8A7C /* DLLMaskWindow.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6F662BE31A3A8A54000A8A7C /* DLLWaitingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F662BE01A3A8A54000A8A7C /* DLLWaitingView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6F662BE91A3A8AAA000A8A7C /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F662BE61A3A8AAA000A8A7C /* MBProgressHUD.m */; };
+		6F662BEA1A3A8AAA000A8A7C /* MBProgressHUD+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F662BE81A3A8AAA000A8A7C /* MBProgressHUD+Toast.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6F662BEC1A3A8BF4000A8A7C /* progress_loading@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F662BEB1A3A8BF4000A8A7C /* progress_loading@2x.png */; };
+		6F662BEF1A3A8DB8000A8A7C /* UIView+Addtion.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F662BEE1A3A8DB8000A8A7C /* UIView+Addtion.m */; };
+		6F662BF21A3A8F4C000A8A7C /* UILabel+Addtion.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F662BF11A3A8F4C000A8A7C /* UILabel+Addtion.m */; };
 		6F8A18C21A39ACB0003E5859 /* ResourceCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F8A18C11A39ACB0003E5859 /* ResourceCategory.m */; };
 		6F8A18D71A39B439003E5859 /* UIGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F8A18D11A39B439003E5859 /* UIGridView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		6F8A18D81A39B439003E5859 /* UIGridViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F8A18D31A39B439003E5859 /* UIGridViewCell.m */; };
@@ -135,6 +143,21 @@
 		6F4D11471A3867CF0075AEFB /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
 		6F4D11581A3867EC0075AEFB /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		6F4D115A1A3867F50075AEFB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		6F662BDB1A3A8A54000A8A7C /* CustomProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomProgress.h; sourceTree = "<group>"; };
+		6F662BDC1A3A8A54000A8A7C /* CustomProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomProgress.m; sourceTree = "<group>"; };
+		6F662BDD1A3A8A54000A8A7C /* DLLMaskWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLLMaskWindow.h; sourceTree = "<group>"; };
+		6F662BDE1A3A8A54000A8A7C /* DLLMaskWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLLMaskWindow.m; sourceTree = "<group>"; };
+		6F662BDF1A3A8A54000A8A7C /* DLLWaitingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLLWaitingView.h; sourceTree = "<group>"; };
+		6F662BE01A3A8A54000A8A7C /* DLLWaitingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLLWaitingView.m; sourceTree = "<group>"; };
+		6F662BE51A3A8AAA000A8A7C /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		6F662BE61A3A8AAA000A8A7C /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		6F662BE71A3A8AAA000A8A7C /* MBProgressHUD+Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+Toast.h"; sourceTree = "<group>"; };
+		6F662BE81A3A8AAA000A8A7C /* MBProgressHUD+Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+Toast.m"; sourceTree = "<group>"; };
+		6F662BEB1A3A8BF4000A8A7C /* progress_loading@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "progress_loading@2x.png"; sourceTree = "<group>"; };
+		6F662BED1A3A8DB8000A8A7C /* UIView+Addtion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Addtion.h"; sourceTree = "<group>"; };
+		6F662BEE1A3A8DB8000A8A7C /* UIView+Addtion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Addtion.m"; sourceTree = "<group>"; };
+		6F662BF01A3A8F4C000A8A7C /* UILabel+Addtion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Addtion.h"; sourceTree = "<group>"; };
+		6F662BF11A3A8F4C000A8A7C /* UILabel+Addtion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Addtion.m"; sourceTree = "<group>"; };
 		6F8A18C01A39ACB0003E5859 /* ResourceCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResourceCategory.h; sourceTree = "<group>"; };
 		6F8A18C11A39ACB0003E5859 /* ResourceCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResourceCategory.m; sourceTree = "<group>"; };
 		6F8A18D01A39B439003E5859 /* UIGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIGridView.h; sourceTree = "<group>"; };
@@ -309,6 +332,34 @@
 			path = SDWebImage;
 			sourceTree = "<group>";
 		};
+		6F662BDA1A3A8A3A000A8A7C /* ProgressDialog */ = {
+			isa = PBXGroup;
+			children = (
+				6F662BF01A3A8F4C000A8A7C /* UILabel+Addtion.h */,
+				6F662BF11A3A8F4C000A8A7C /* UILabel+Addtion.m */,
+				6F662BED1A3A8DB8000A8A7C /* UIView+Addtion.h */,
+				6F662BEE1A3A8DB8000A8A7C /* UIView+Addtion.m */,
+				6F662BDB1A3A8A54000A8A7C /* CustomProgress.h */,
+				6F662BDC1A3A8A54000A8A7C /* CustomProgress.m */,
+				6F662BDD1A3A8A54000A8A7C /* DLLMaskWindow.h */,
+				6F662BDE1A3A8A54000A8A7C /* DLLMaskWindow.m */,
+				6F662BDF1A3A8A54000A8A7C /* DLLWaitingView.h */,
+				6F662BE01A3A8A54000A8A7C /* DLLWaitingView.m */,
+			);
+			name = ProgressDialog;
+			sourceTree = "<group>";
+		};
+		6F662BE41A3A8A97000A8A7C /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				6F662BE51A3A8AAA000A8A7C /* MBProgressHUD.h */,
+				6F662BE61A3A8AAA000A8A7C /* MBProgressHUD.m */,
+				6F662BE71A3A8AAA000A8A7C /* MBProgressHUD+Toast.h */,
+				6F662BE81A3A8AAA000A8A7C /* MBProgressHUD+Toast.m */,
+			);
+			name = Toast;
+			sourceTree = "<group>";
+		};
 		6F8A18BF1A39AC78003E5859 /* Bean */ = {
 			isa = PBXGroup;
 			children = (
@@ -346,6 +397,7 @@
 		6FBE48F51A381C5E003E490E /* res */ = {
 			isa = PBXGroup;
 			children = (
+				6F662BEB1A3A8BF4000A8A7C /* progress_loading@2x.png */,
 				6F8A18DC1A39B79C003E5859 /* history.png */,
 				6F8A18DA1A39B783003E5859 /* speed.png */,
 				6FCDE1BB1A385B73000799E9 /* search_flag_image.png */,
@@ -512,6 +564,8 @@
 		C49D26B11A3591E100FA192F /* iyours */ = {
 			isa = PBXGroup;
 			children = (
+				6F662BE41A3A8A97000A8A7C /* Toast */,
+				6F662BDA1A3A8A3A000A8A7C /* ProgressDialog */,
 				6F8A18CF1A39B439003E5859 /* UIGridView */,
 				6F4D11261A3867CF0075AEFB /* SDWebImage */,
 				6FBE49561A381ED7003E490E /* Frameworks */,
@@ -653,6 +707,7 @@
 				C49D26C31A3591E100FA192F /* LaunchScreen.xib in Resources */,
 				6FBE48F31A381BC1003E490E /* play_select.png in Resources */,
 				C49D26C01A3591E100FA192F /* Images.xcassets in Resources */,
+				6F662BEC1A3A8BF4000A8A7C /* progress_loading@2x.png in Resources */,
 				6FBE48F41A381BC1003E490E /* home_select.png in Resources */,
 				6FBE48EF1A381BC1003E490E /* download_normal.png in Resources */,
 				6FBE48F11A381BC1003E490E /* home_normal.png in Resources */,
@@ -689,6 +744,7 @@
 				6F4D11501A3867CF0075AEFB /* SDWebImagePrefetcher.m in Sources */,
 				6F4D11571A3867CF0075AEFB /* UIView+WebCacheOperation.m in Sources */,
 				6F4D11481A3867CF0075AEFB /* MKAnnotationView+WebCache.m in Sources */,
+				6F662BF21A3A8F4C000A8A7C /* UILabel+Addtion.m in Sources */,
 				C49D26B51A3591E100FA192F /* main.m in Sources */,
 				6FBE49391A381DCE003E490E /* ASIHTTPRequest.m in Sources */,
 				6FBE49471A381DCE003E490E /* ASIS3ObjectRequest.m in Sources */,
@@ -711,6 +767,7 @@
 				6F8A18D91A39B439003E5859 /* UIGridViewRow.m in Sources */,
 				6F4D114C1A3867CF0075AEFB /* SDWebImageDecoder.m in Sources */,
 				6F4D114F1A3867CF0075AEFB /* SDWebImageManager.m in Sources */,
+				6F662BE31A3A8A54000A8A7C /* DLLWaitingView.m in Sources */,
 				6FBE48CA1A37FC60003E490E /* HomeViewController.m in Sources */,
 				6FBE49441A381DCE003E490E /* ASIS3Bucket.m in Sources */,
 				6FBE49361A381DCE003E490E /* ASIDataDecompressor.m in Sources */,
@@ -721,21 +778,26 @@
 				6FBE49341A381DCE003E490E /* ASIAuthenticationDialog.m in Sources */,
 				6FBE49401A381DCE003E490E /* ASICloudFilesContainerXMLParserDelegate.m in Sources */,
 				6FBE49351A381DCE003E490E /* ASIDataCompressor.m in Sources */,
+				6F662BE11A3A8A54000A8A7C /* CustomProgress.m in Sources */,
 				6FBE493C1A381DCE003E490E /* ASIWebPageRequest.m in Sources */,
 				6F8A18C21A39ACB0003E5859 /* ResourceCategory.m in Sources */,
 				6FBE48FD1A381DC5003E490E /* Reachability.m in Sources */,
 				6F8A18D81A39B439003E5859 /* UIGridViewCell.m in Sources */,
 				6F4D11511A3867CF0075AEFB /* UIButton+WebCache.m in Sources */,
+				6F662BEF1A3A8DB8000A8A7C /* UIView+Addtion.m in Sources */,
 				6FBE49461A381DCE003E490E /* ASIS3BucketRequest.m in Sources */,
+				6F662BE21A3A8A54000A8A7C /* DLLMaskWindow.m in Sources */,
 				6FBE49371A381DCE003E490E /* ASIDownloadCache.m in Sources */,
 				6FBE493B1A381DCE003E490E /* ASINetworkQueue.m in Sources */,
 				6F4D114A1A3867CF0075AEFB /* SDImageCache.m in Sources */,
 				6FBE49411A381DCE003E490E /* ASICloudFilesObject.m in Sources */,
 				6FBE49431A381DCE003E490E /* ASICloudFilesRequest.m in Sources */,
+				6F662BEA1A3A8AAA000A8A7C /* MBProgressHUD+Toast.m in Sources */,
 				6FBE49451A381DCE003E490E /* ASIS3BucketObject.m in Sources */,
 				6FBE48CF1A37FC81003E490E /* DownLoadViewController.m in Sources */,
 				6F4D11561A3867CF0075AEFB /* UIImageView+WebCache.m in Sources */,
 				6F4D11541A3867CF0075AEFB /* UIImage+WebP.m in Sources */,
+				6F662BE91A3A8AAA000A8A7C /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

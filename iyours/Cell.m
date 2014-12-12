@@ -25,11 +25,17 @@
 		[[NSBundle mainBundle] loadNibNamed:@"Cell" owner:self options:nil];
 		
         [self addSubview:self.view];
+        self.view.backgroundColor = [UIColor whiteColor];
+        self.view.layer.cornerRadius = 4.0;
+        self.view.layer.masksToBounds = YES;
+        self.view.layer.borderColor = [UIColor lightGrayColor].CGColor;
+        self.view.layer.borderWidth = 0.5;
+
 		
-		self.thumbnail.layer.cornerRadius = 4.0;
-		self.thumbnail.layer.masksToBounds = YES;
-		self.thumbnail.layer.borderColor = [UIColor lightGrayColor].CGColor;
-		self.thumbnail.layer.borderWidth = 1.0;
+//		self.thumbnail.layer.cornerRadius = 4.0;
+//		self.thumbnail.layer.masksToBounds = YES;
+//		self.thumbnail.layer.borderColor = [UIColor lightGrayColor].CGColor;
+//		self.thumbnail.layer.borderWidth = 1.0;
 	}
 	
     return self;
