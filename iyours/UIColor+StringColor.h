@@ -12,4 +12,29 @@
 
 + (UIColor *)colorWithHexString:(NSString *)stringToConvert;
 
+/**
+ 十六进制色
+ **/
++ (UIColor  *)colorWithHex:(NSString *)hexColor;
+
+/**
+ ARGB十进制
+ **/
++ (UIColor *)colorWithDecimalismRed:(NSUInteger)red green:(NSUInteger)green blue:(NSUInteger)blue alpha:(CGFloat)alpha;
+
+/**
+ RGB十进制
+ **/
++ (UIColor *)colorWithDecimalismRed:(NSUInteger)red green:(NSUInteger)green blue:(NSUInteger)blue;
+
+/**
+ 灰色
+ **/
++ (UIColor *)colorWithDecimalismWhite:(NSUInteger)white;
+
+/**
+ 灰色+透明度
+ **/
++ (UIColor *)colorWithDecimalismWhite:(NSUInteger)white alpha:(CGFloat)alpha;
+
 @end

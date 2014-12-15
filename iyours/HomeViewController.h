@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UIGridView.h"
+#import "UIGridViewDelegate.h"
 
-@interface HomeViewController : UIViewController<UIScrollViewDelegate , UIActionSheetDelegate>
+@interface HomeViewController : UIViewController<UIScrollViewDelegate , UIActionSheetDelegate , UIGridViewDelegate>
 
 
 @property (strong, nonatomic) IBOutlet UIButton *courseBtn;
@@ -19,4 +21,10 @@
 
 @property (nonatomic, strong) NSTimer *timer;
 
+@property (nonatomic, nonatomic) IBOutlet UIGridView *table;
+@property (strong, nonatomic) IBOutlet UIButton *recordBtn;
+
+@property (strong, nonatomic) IBOutlet UIButton *speedBtn;
+
+@property (strong , nonatomic) NSMutableArray *array;
 @end

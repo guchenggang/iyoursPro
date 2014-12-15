@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "MainTabBarController.h"
+#import "LoginViewController.h"
+#import "UIColor+StringColor.h"
 
 @interface AppDelegate ()
 
@@ -17,10 +19,14 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    //设置导航栏的颜色
+    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithHexString:@"#FFA63D"]];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor blackColor];
-    MainTabBarController *main = [[MainTabBarController alloc] init];
-    self.window.rootViewController = main;
+//    MainTabBarController *main = [[MainTabBarController alloc] init];
+    LoginViewController *main = [[LoginViewController alloc] initWithNibName:@"LoginViewController" bundle:nil];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:main];
+    self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];
     return YES;
 }
