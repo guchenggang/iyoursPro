@@ -16,7 +16,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Zbz-km-Hd6">
-                    <rect key="frame" x="126" y="40" width="123" height="29"/>
+                    <rect key="frame" x="62" y="40" width="250" height="29"/>
                     <segments>
                         <segment title="正在下载"/>
                         <segment title="已下载"/>

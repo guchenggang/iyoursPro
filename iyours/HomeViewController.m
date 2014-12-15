@@ -321,11 +321,8 @@
     if (cell == nil) {
         cell = [[Cell alloc] init];
     }
-    
-    if(columnIndex == 4){
-        
-    }
-    ResourceCategory *rc =  self.array[columnIndex];
+
+    ResourceCategory *rc =  self.array[rowIndex * 4 + columnIndex];
     cell.label.text = rc.rescateName;
     UIImageView *image = cell.thumbnail;
     [image sd_setImageWithURL:rc.logoUrl];
@@ -336,6 +333,7 @@
 - (void) gridView:(UIGridView *)grid didSelectRowAt:(int)rowIndex AndColumnAt:(int)colIndex
 {
     NSLog(@"%d, %d clicked", rowIndex, colIndex);
+    NSLog(@"%@" , self.array[rowIndex * 4 + colIndex]);
 }
 
 @end

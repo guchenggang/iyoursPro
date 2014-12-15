@@ -22,4 +22,5 @@
 //课程图标
 @property (strong , nonatomic) NSString *logoUrl;
 
+
 @end

@@ -51,7 +51,7 @@ static DLLWaitingView *__waitingView;
         [_indicatorView setInCenterVertical];
         [_indicatorView setToLeft:30];
         _label = [[UILabel alloc] initWithFrame:CGRectMake(65, 25, 100, 15)];
-        _label.text = @"正在加载...";
+        _label.text = @"请稍后...";
         _label.textAlignment = NSTextAlignmentCenter;
         _label.textColor = [UIColor whiteColor];
         _label.autoresizingMask = mask;

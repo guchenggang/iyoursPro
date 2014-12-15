@@ -10,4 +10,9 @@
 
 @implementation ResourceCategory
 
+-(NSString *)description
+{
+    return [NSString stringWithFormat:@"resId = %@ , rescateId = %@ , rescateName = %@ , logoUrl = %@" , _resId , _rescateId , _rescateName , _logoUrl ];
+}
+
 @end

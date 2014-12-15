@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F1C00531A3EAC2F0043B88D /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F1C00511A3EAC2F0043B88D /* LoginViewController.m */; };
+		6F1C00541A3EAC2F0043B88D /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F1C00521A3EAC2F0043B88D /* LoginViewController.xib */; };
+		6F1C00561A3EAC720043B88D /* login_pad.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F1C00551A3EAC720043B88D /* login_pad.png */; };
+		6F1C00581A3EAC7B0043B88D /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F1C00571A3EAC7B0043B88D /* logo.png */; };
 		6F4327041A382D49001CEE03 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FBE49541A381ECD003E490E /* libxml2.dylib */; };
 		6F4D11481A3867CF0075AEFB /* MKAnnotationView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F4D11281A3867CF0075AEFB /* MKAnnotationView+WebCache.m */; };
 		6F4D11491A3867CF0075AEFB /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F4D112A1A3867CF0075AEFB /* NSData+ImageContentType.m */; };
@@ -107,6 +111,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6F1C00501A3EAC2F0043B88D /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		6F1C00511A3EAC2F0043B88D /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		6F1C00521A3EAC2F0043B88D /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		6F1C00551A3EAC720043B88D /* login_pad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_pad.png; sourceTree = "<group>"; };
+		6F1C00571A3EAC7B0043B88D /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		6F4327021A382D1C001CEE03 /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
 		6F4D11271A3867CF0075AEFB /* MKAnnotationView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKAnnotationView+WebCache.h"; sourceTree = "<group>"; };
 		6F4D11281A3867CF0075AEFB /* MKAnnotationView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKAnnotationView+WebCache.m"; sourceTree = "<group>"; };
@@ -397,6 +406,8 @@
 		6FBE48F51A381C5E003E490E /* res */ = {
 			isa = PBXGroup;
 			children = (
+				6F1C00571A3EAC7B0043B88D /* logo.png */,
+				6F1C00551A3EAC720043B88D /* login_pad.png */,
 				6F662BEB1A3A8BF4000A8A7C /* progress_loading@2x.png */,
 				6F8A18DC1A39B79C003E5859 /* history.png */,
 				6F8A18DA1A39B783003E5859 /* speed.png */,
@@ -576,6 +587,9 @@
 				C49D26BF1A3591E100FA192F /* Images.xcassets */,
 				C49D26C11A3591E100FA192F /* LaunchScreen.xib */,
 				C49D26B21A3591E100FA192F /* Supporting Files */,
+				6F1C00501A3EAC2F0043B88D /* LoginViewController.h */,
+				6F1C00511A3EAC2F0043B88D /* LoginViewController.m */,
+				6F1C00521A3EAC2F0043B88D /* LoginViewController.xib */,
 				6FBE48C41A37FBF3003E490E /* MainTabBarController.h */,
 				6FBE48C51A37FBF3003E490E /* MainTabBarController.m */,
 				6FBE48C71A37FC60003E490E /* HomeViewController.h */,
@@ -705,10 +719,12 @@
 			files = (
 				6FCDE1B71A385A02000799E9 /* bg_setting_off.png in Resources */,
 				C49D26C31A3591E100FA192F /* LaunchScreen.xib in Resources */,
+				6F1C00581A3EAC7B0043B88D /* logo.png in Resources */,
 				6FBE48F31A381BC1003E490E /* play_select.png in Resources */,
 				C49D26C01A3591E100FA192F /* Images.xcassets in Resources */,
 				6F662BEC1A3A8BF4000A8A7C /* progress_loading@2x.png in Resources */,
 				6FBE48F41A381BC1003E490E /* home_select.png in Resources */,
+				6F1C00541A3EAC2F0043B88D /* LoginViewController.xib in Resources */,
 				6FBE48EF1A381BC1003E490E /* download_normal.png in Resources */,
 				6FBE48F11A381BC1003E490E /* home_normal.png in Resources */,
 				6FBE48D01A37FC81003E490E /* DownLoadViewController.xib in Resources */,
@@ -722,6 +738,7 @@
 				6F8A18DD1A39B79C003E5859 /* history.png in Resources */,
 				6FBE48F01A381BC1003E490E /* download_select.png in Resources */,
 				6FBE48FC1A381DC5003E490E /* README-GHUnit in Resources */,
+				6F1C00561A3EAC720043B88D /* login_pad.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -753,6 +770,7 @@
 				6FBE493A1A381DCE003E490E /* ASIInputStream.m in Sources */,
 				6FBE493E1A381DCE003E490E /* ASICloudFilesContainer.m in Sources */,
 				6FBE49421A381DCE003E490E /* ASICloudFilesObjectRequest.m in Sources */,
+				6F1C00531A3EAC2F0043B88D /* LoginViewController.m in Sources */,
 				6F8A18F01A39C29D003E5859 /* Cell.m in Sources */,
 				6FBE493D1A381DCE003E490E /* ASICloudFilesCDNRequest.m in Sources */,
 				6F4D11491A3867CF0075AEFB /* NSData+ImageContentType.m in Sources */,
