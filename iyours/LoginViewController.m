@@ -12,6 +12,7 @@
 #import "ASIFormDataRequest.h"
 #import "NSString+Addtion.h"
 #import "DLLWaitingView.h"
+#import "MainTabBarController.h"
 
 @interface LoginViewController ()
 
@@ -62,13 +63,20 @@
     
     NSLog(@"username = %@ pwd = %@" , userName , pwd);
     
-     NSURL *url = [NSURL URLWithString:@"http://www.iyours.com.cn/mobile/index/login/"];
-    ASIFormDataRequest *request=[ASIFormDataRequest requestWithURL:url];
-    [request setPostValue:userName  forKey:@"userName"];
-    [request setPostValue:pwd forKey:@"password"];
-    [request setDelegate:self];
-    [request startAsynchronous];
-    [DLLWaitingView showWithAnimated:YES];
+//     NSURL *url = [NSURL URLWithString:@"http://www.iyours.com.cn/mobile/index/login/"];
+//    ASIFormDataRequest *request=[ASIFormDataRequest requestWithURL:url];
+//    [request setPostValue:userName  forKey:@"userName"];
+//    [request setPostValue:pwd forKey:@"password"];
+//    [request setDelegate:self];
+//    [request startAsynchronous];
+//    [DLLWaitingView showWithAnimated:YES];
+    
+    
+    MainTabBarController *main = [[MainTabBarController alloc] init];
+    //设定转场动画 4种样式
+    [main setModalTransitionStyle:UIModalTransitionStyleFlipHorizontal];
+    [self presentViewController:main animated:YES completion:nil];
+
     
 }
 
@@ -93,6 +101,13 @@
     // 在抓取时使用二进制数据
     //    NSData *responseData = [request responseData];
     //    NSLog(@"responseData = %@" , responseData);
+    
+    
+    MainTabBarController *main = [[MainTabBarController alloc] init];
+    //设定转场动画 4种样式
+    [main setModalTransitionStyle:UIModalTransitionStyleFlipHorizontal];
+    [self presentViewController:main animated:YES completion:nil];
+
     
 }
 
