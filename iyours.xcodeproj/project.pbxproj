@@ -98,6 +98,22 @@
 		C49D26C01A3591E100FA192F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C49D26BF1A3591E100FA192F /* Images.xcassets */; };
 		C49D26C31A3591E100FA192F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C49D26C11A3591E100FA192F /* LaunchScreen.xib */; };
 		C49D26CF1A3591E100FA192F /* iyoursTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C49D26CE1A3591E100FA192F /* iyoursTests.m */; };
+		C4E9D2561A400ECE00056BB0 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E9D24C1A400ECE00056BB0 /* FMDatabase.m */; };
+		C4E9D2571A400ECE00056BB0 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E9D24E1A400ECE00056BB0 /* FMDatabaseAdditions.m */; };
+		C4E9D2581A400ECE00056BB0 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E9D2501A400ECE00056BB0 /* FMDatabasePool.m */; };
+		C4E9D2591A400ECE00056BB0 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E9D2521A400ECE00056BB0 /* FMDatabaseQueue.m */; };
+		C4E9D25A1A400ECE00056BB0 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E9D2551A400ECE00056BB0 /* FMResultSet.m */; };
+		C4E9D26C1A400F7D00056BB0 /* iyours_cache.db in Resources */ = {isa = PBXBuildFile; fileRef = C4E9D25C1A400F7D00056BB0 /* iyours_cache.db */; };
+		C4E9D26D1A400F7D00056BB0 /* PhoneVerifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E9D25D1A400F7D00056BB0 /* PhoneVerifyViewController.m */; };
+		C4E9D26E1A400F7D00056BB0 /* PhoneVerifyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4E9D25E1A400F7D00056BB0 /* PhoneVerifyViewController.xib */; };
+		C4E9D26F1A400F7D00056BB0 /* Provinces.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E9D2601A400F7D00056BB0 /* Provinces.m */; };
+		C4E9D2701A400F7D00056BB0 /* ProvincesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E9D2621A400F7D00056BB0 /* ProvincesViewController.m */; };
+		C4E9D2711A400F7D00056BB0 /* ProvincesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4E9D2631A400F7D00056BB0 /* ProvincesViewController.xib */; };
+		C4E9D2721A400F7D00056BB0 /* RegionInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E9D2651A400F7D00056BB0 /* RegionInfo.m */; };
+		C4E9D2731A400F7D00056BB0 /* RegisterItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E9D2671A400F7D00056BB0 /* RegisterItem.m */; };
+		C4E9D2741A400F7D00056BB0 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E9D2691A400F7D00056BB0 /* RegisterViewController.m */; };
+		C4E9D2751A400F7D00056BB0 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4E9D26A1A400F7D00056BB0 /* RegisterViewController.xib */; };
+		C4E9D2781A40117600056BB0 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C4E9D2771A40117600056BB0 /* libsqlite3.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -273,6 +289,34 @@
 		C49D26C81A3591E100FA192F /* iyoursTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iyoursTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C49D26CD1A3591E100FA192F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C49D26CE1A3591E100FA192F /* iyoursTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iyoursTests.m; sourceTree = "<group>"; };
+		C4E9D24B1A400ECE00056BB0 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		C4E9D24C1A400ECE00056BB0 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		C4E9D24D1A400ECE00056BB0 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		C4E9D24E1A400ECE00056BB0 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		C4E9D24F1A400ECE00056BB0 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		C4E9D2501A400ECE00056BB0 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		C4E9D2511A400ECE00056BB0 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		C4E9D2521A400ECE00056BB0 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		C4E9D2531A400ECE00056BB0 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		C4E9D2541A400ECE00056BB0 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		C4E9D2551A400ECE00056BB0 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		C4E9D25B1A400F2B00056BB0 /* PhoneVerifyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhoneVerifyViewController.h; sourceTree = "<group>"; };
+		C4E9D25C1A400F7D00056BB0 /* iyours_cache.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = iyours_cache.db; sourceTree = "<group>"; };
+		C4E9D25D1A400F7D00056BB0 /* PhoneVerifyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhoneVerifyViewController.m; sourceTree = "<group>"; };
+		C4E9D25E1A400F7D00056BB0 /* PhoneVerifyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhoneVerifyViewController.xib; sourceTree = "<group>"; };
+		C4E9D25F1A400F7D00056BB0 /* Provinces.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Provinces.h; sourceTree = "<group>"; };
+		C4E9D2601A400F7D00056BB0 /* Provinces.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Provinces.m; sourceTree = "<group>"; };
+		C4E9D2611A400F7D00056BB0 /* ProvincesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProvincesViewController.h; sourceTree = "<group>"; };
+		C4E9D2621A400F7D00056BB0 /* ProvincesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProvincesViewController.m; sourceTree = "<group>"; };
+		C4E9D2631A400F7D00056BB0 /* ProvincesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProvincesViewController.xib; sourceTree = "<group>"; };
+		C4E9D2641A400F7D00056BB0 /* RegionInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegionInfo.h; sourceTree = "<group>"; };
+		C4E9D2651A400F7D00056BB0 /* RegionInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegionInfo.m; sourceTree = "<group>"; };
+		C4E9D2661A400F7D00056BB0 /* RegisterItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterItem.h; sourceTree = "<group>"; };
+		C4E9D2671A400F7D00056BB0 /* RegisterItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterItem.m; sourceTree = "<group>"; };
+		C4E9D2681A400F7D00056BB0 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		C4E9D2691A400F7D00056BB0 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		C4E9D26A1A400F7D00056BB0 /* RegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
+		C4E9D2771A40117600056BB0 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -280,6 +324,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4E9D2781A40117600056BB0 /* libsqlite3.dylib in Frameworks */,
 				6F4D115B1A3867F50075AEFB /* MapKit.framework in Frameworks */,
 				6F4D11591A3867EC0075AEFB /* ImageIO.framework in Frameworks */,
 				6F4327041A382D49001CEE03 /* libxml2.dylib in Frameworks */,
@@ -557,6 +602,8 @@
 		C49D26A61A3591E000FA192F = {
 			isa = PBXGroup;
 			children = (
+				C4E9D2771A40117600056BB0 /* libsqlite3.dylib */,
+				C4E9D24A1A400ECE00056BB0 /* fmdb */,
 				C49D26B11A3591E100FA192F /* iyours */,
 				C49D26CB1A3591E100FA192F /* iyoursTests */,
 				C49D26B01A3591E100FA192F /* Products */,
@@ -575,6 +622,22 @@
 		C49D26B11A3591E100FA192F /* iyours */ = {
 			isa = PBXGroup;
 			children = (
+				C4E9D25C1A400F7D00056BB0 /* iyours_cache.db */,
+				C4E9D25D1A400F7D00056BB0 /* PhoneVerifyViewController.m */,
+				C4E9D25E1A400F7D00056BB0 /* PhoneVerifyViewController.xib */,
+				C4E9D25F1A400F7D00056BB0 /* Provinces.h */,
+				C4E9D2601A400F7D00056BB0 /* Provinces.m */,
+				C4E9D2611A400F7D00056BB0 /* ProvincesViewController.h */,
+				C4E9D2621A400F7D00056BB0 /* ProvincesViewController.m */,
+				C4E9D2631A400F7D00056BB0 /* ProvincesViewController.xib */,
+				C4E9D2641A400F7D00056BB0 /* RegionInfo.h */,
+				C4E9D2651A400F7D00056BB0 /* RegionInfo.m */,
+				C4E9D2661A400F7D00056BB0 /* RegisterItem.h */,
+				C4E9D2671A400F7D00056BB0 /* RegisterItem.m */,
+				C4E9D2681A400F7D00056BB0 /* RegisterViewController.h */,
+				C4E9D2691A400F7D00056BB0 /* RegisterViewController.m */,
+				C4E9D26A1A400F7D00056BB0 /* RegisterViewController.xib */,
+				C4E9D25B1A400F2B00056BB0 /* PhoneVerifyViewController.h */,
 				6F662BE41A3A8A97000A8A7C /* Toast */,
 				6F662BDA1A3A8A3A000A8A7C /* ProgressDialog */,
 				6F8A18CF1A39B439003E5859 /* UIGridView */,
@@ -635,6 +698,25 @@
 				C49D26CD1A3591E100FA192F /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C4E9D24A1A400ECE00056BB0 /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				C4E9D24B1A400ECE00056BB0 /* FMDatabase.h */,
+				C4E9D24C1A400ECE00056BB0 /* FMDatabase.m */,
+				C4E9D24D1A400ECE00056BB0 /* FMDatabaseAdditions.h */,
+				C4E9D24E1A400ECE00056BB0 /* FMDatabaseAdditions.m */,
+				C4E9D24F1A400ECE00056BB0 /* FMDatabasePool.h */,
+				C4E9D2501A400ECE00056BB0 /* FMDatabasePool.m */,
+				C4E9D2511A400ECE00056BB0 /* FMDatabaseQueue.h */,
+				C4E9D2521A400ECE00056BB0 /* FMDatabaseQueue.m */,
+				C4E9D2531A400ECE00056BB0 /* FMDB.h */,
+				C4E9D2541A400ECE00056BB0 /* FMResultSet.h */,
+				C4E9D2551A400ECE00056BB0 /* FMResultSet.m */,
+			);
+			name = fmdb;
+			path = iyours/fmdb;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -718,9 +800,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				6FCDE1B71A385A02000799E9 /* bg_setting_off.png in Resources */,
+				C4E9D2751A400F7D00056BB0 /* RegisterViewController.xib in Resources */,
 				C49D26C31A3591E100FA192F /* LaunchScreen.xib in Resources */,
 				6F1C00581A3EAC7B0043B88D /* logo.png in Resources */,
 				6FBE48F31A381BC1003E490E /* play_select.png in Resources */,
+				C4E9D2711A400F7D00056BB0 /* ProvincesViewController.xib in Resources */,
 				C49D26C01A3591E100FA192F /* Images.xcassets in Resources */,
 				6F662BEC1A3A8BF4000A8A7C /* progress_loading@2x.png in Resources */,
 				6FBE48F41A381BC1003E490E /* home_select.png in Resources */,
@@ -729,6 +813,7 @@
 				6FBE48F11A381BC1003E490E /* home_normal.png in Resources */,
 				6FBE48D01A37FC81003E490E /* DownLoadViewController.xib in Resources */,
 				6FBE48F21A381BC1003E490E /* play_normal.png in Resources */,
+				C4E9D26E1A400F7D00056BB0 /* PhoneVerifyViewController.xib in Resources */,
 				6FBE48CB1A37FC60003E490E /* HomeViewController.xib in Resources */,
 				6FCDE1B81A385A02000799E9 /* bg_setting_on.png in Resources */,
 				6FBE48D51A37FCCF003E490E /* PlayViewController.xib in Resources */,
@@ -736,6 +821,7 @@
 				6F8A18F11A39C29D003E5859 /* Cell.xib in Resources */,
 				6F8A18DB1A39B783003E5859 /* speed.png in Resources */,
 				6F8A18DD1A39B79C003E5859 /* history.png in Resources */,
+				C4E9D26C1A400F7D00056BB0 /* iyours_cache.db in Resources */,
 				6FBE48F01A381BC1003E490E /* download_select.png in Resources */,
 				6FBE48FC1A381DC5003E490E /* README-GHUnit in Resources */,
 				6F1C00561A3EAC720043B88D /* login_pad.png in Resources */,
@@ -756,11 +842,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4E9D2701A400F7D00056BB0 /* ProvincesViewController.m in Sources */,
 				6F8A18D71A39B439003E5859 /* UIGridView.m in Sources */,
 				C49D26B81A3591E100FA192F /* AppDelegate.m in Sources */,
 				6F4D11501A3867CF0075AEFB /* SDWebImagePrefetcher.m in Sources */,
 				6F4D11571A3867CF0075AEFB /* UIView+WebCacheOperation.m in Sources */,
+				C4E9D2581A400ECE00056BB0 /* FMDatabasePool.m in Sources */,
 				6F4D11481A3867CF0075AEFB /* MKAnnotationView+WebCache.m in Sources */,
+				C4E9D2571A400ECE00056BB0 /* FMDatabaseAdditions.m in Sources */,
 				6F662BF21A3A8F4C000A8A7C /* UILabel+Addtion.m in Sources */,
 				C49D26B51A3591E100FA192F /* main.m in Sources */,
 				6FBE49391A381DCE003E490E /* ASIHTTPRequest.m in Sources */,
@@ -773,12 +862,16 @@
 				6F1C00531A3EAC2F0043B88D /* LoginViewController.m in Sources */,
 				6F8A18F01A39C29D003E5859 /* Cell.m in Sources */,
 				6FBE493D1A381DCE003E490E /* ASICloudFilesCDNRequest.m in Sources */,
+				C4E9D25A1A400ECE00056BB0 /* FMResultSet.m in Sources */,
 				6F4D11491A3867CF0075AEFB /* NSData+ImageContentType.m in Sources */,
 				6F4D11521A3867CF0075AEFB /* UIImage+GIF.m in Sources */,
 				6FBE493F1A381DCE003E490E /* ASICloudFilesContainerRequest.m in Sources */,
 				6F4D114D1A3867CF0075AEFB /* SDWebImageDownloader.m in Sources */,
+				C4E9D2561A400ECE00056BB0 /* FMDatabase.m in Sources */,
 				6F4D114B1A3867CF0075AEFB /* SDWebImageCompat.m in Sources */,
+				C4E9D2591A400ECE00056BB0 /* FMDatabaseQueue.m in Sources */,
 				6FBE48DC1A37FD88003E490E /* NSString+Addtion.m in Sources */,
+				C4E9D2731A400F7D00056BB0 /* RegisterItem.m in Sources */,
 				6F4D11551A3867CF0075AEFB /* UIImageView+HighlightedWebCache.m in Sources */,
 				6FBE49491A381DCE003E490E /* ASIS3ServiceRequest.m in Sources */,
 				6FBE49481A381DCE003E490E /* ASIS3Request.m in Sources */,
@@ -786,13 +879,16 @@
 				6F4D114C1A3867CF0075AEFB /* SDWebImageDecoder.m in Sources */,
 				6F4D114F1A3867CF0075AEFB /* SDWebImageManager.m in Sources */,
 				6F662BE31A3A8A54000A8A7C /* DLLWaitingView.m in Sources */,
+				C4E9D2721A400F7D00056BB0 /* RegionInfo.m in Sources */,
 				6FBE48CA1A37FC60003E490E /* HomeViewController.m in Sources */,
+				C4E9D26D1A400F7D00056BB0 /* PhoneVerifyViewController.m in Sources */,
 				6FBE49441A381DCE003E490E /* ASIS3Bucket.m in Sources */,
 				6FBE49361A381DCE003E490E /* ASIDataDecompressor.m in Sources */,
 				6FBE48D41A37FCCF003E490E /* PlayViewController.m in Sources */,
 				6F4D114E1A3867CF0075AEFB /* SDWebImageDownloaderOperation.m in Sources */,
 				6FBE49381A381DCE003E490E /* ASIFormDataRequest.m in Sources */,
 				6FBE48D91A37FD67003E490E /* UIColor+StringColor.m in Sources */,
+				C4E9D2741A400F7D00056BB0 /* RegisterViewController.m in Sources */,
 				6FBE49341A381DCE003E490E /* ASIAuthenticationDialog.m in Sources */,
 				6FBE49401A381DCE003E490E /* ASICloudFilesContainerXMLParserDelegate.m in Sources */,
 				6FBE49351A381DCE003E490E /* ASIDataCompressor.m in Sources */,
@@ -815,6 +911,7 @@
 				6FBE48CF1A37FC81003E490E /* DownLoadViewController.m in Sources */,
 				6F4D11561A3867CF0075AEFB /* UIImageView+WebCache.m in Sources */,
 				6F4D11541A3867CF0075AEFB /* UIImage+WebP.m in Sources */,
+				C4E9D26F1A400F7D00056BB0 /* Provinces.m in Sources */,
 				6F662BE91A3A8AAA000A8A7C /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
