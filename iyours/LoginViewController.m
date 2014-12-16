@@ -13,7 +13,7 @@
 #import "NSString+Addtion.h"
 #import "DLLWaitingView.h"
 #import "MainTabBarController.h"
-
+#import "PhoneVerifyViewController.h"
 @interface LoginViewController ()
 
 @end
@@ -122,6 +122,12 @@
 - (void)toRegister{
     [self.username resignFirstResponder];
     [self.pwd resignFirstResponder];
+    
+    PhoneVerifyViewController *viewController = [[PhoneVerifyViewController alloc] initWithNibName:@"PhoneVerifyViewController" bundle:nil];
+    
+    
+    [self presentViewController:viewController animated:YES completion:nil];
+    
     NSLog(@"register");
     
 }
