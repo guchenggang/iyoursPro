@@ -586,6 +586,7 @@
 		6FBE49561A381ED7003E490E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C4E9D2771A40117600056BB0 /* libsqlite3.dylib */,
 				6F4D115A1A3867F50075AEFB /* MapKit.framework */,
 				6F4D11581A3867EC0075AEFB /* ImageIO.framework */,
 				6F4327021A382D1C001CEE03 /* libxml2.2.dylib */,
@@ -602,7 +603,6 @@
 		C49D26A61A3591E000FA192F = {
 			isa = PBXGroup;
 			children = (
-				C4E9D2771A40117600056BB0 /* libsqlite3.dylib */,
 				C4E9D24A1A400ECE00056BB0 /* fmdb */,
 				C49D26B11A3591E100FA192F /* iyours */,
 				C49D26CB1A3591E100FA192F /* iyoursTests */,
