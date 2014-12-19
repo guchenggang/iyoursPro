@@ -8,12 +8,16 @@
 
 #import <Foundation/Foundation.h>
 #import "CourseInfo.h"
+#import "FMDB.h"
 
 @interface CourseDBUtils : NSObject
 
+@property FMDatabase *db;
+
++ (id) openDatabase;
 + (BOOL) initDatabase ;
-- (BOOL) addCourseInfo : (CourseInfo *) info ;
-- (BOOL) delAllCourseInfo : (NSString *) userId ;
++ (BOOL) addCourseInfo : (CourseInfo *) info ;
++ (BOOL) delAllCourseInfo : (NSString *) userId ;
 
 
 @end
