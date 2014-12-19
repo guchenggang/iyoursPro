@@ -15,6 +15,7 @@
 #import "DLLWaitingView.h"
 #import "MBProgressHUD+Toast.h"
 #import "ResourceCategory.h"
+#import "ResTableViewController.h"
 
 //手机屏幕的宽
 #define  SCREENWIDTH [[UIScreen mainScreen] bounds].size.width
@@ -169,7 +170,7 @@
 
 -(void)record
 {
-    [MBProgressHUD toastText:@"12345"];
+    
 }
 
 -(void)courseChose
@@ -334,6 +335,14 @@
 {
     NSLog(@"%d, %d clicked", rowIndex, colIndex);
     NSLog(@"%@" , self.array[rowIndex * 4 + colIndex]);
+    
+    ResTableViewController *resTabView = [[ResTableViewController alloc] initWithNibName:@"ResTableViewController" bundle:nil];
+    resTabView.item = self.array[rowIndex * 4 + colIndex];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:resTabView];
+    [nav setModalTransitionStyle:UIModalTransitionStyleCrossDissolve];
+    [self presentViewController:nav animated:YES completion:nil];
+    
+    
 }
 
 @end

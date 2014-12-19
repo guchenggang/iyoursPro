@@ -14,6 +14,10 @@
 #import "DLLWaitingView.h"
 #import "MainTabBarController.h"
 #import "PhoneVerifyViewController.h"
+#import "MBProgressHUD+Toast.h"
+#import "UserInfo.h"
+#import "AppDelegate.h"
+
 @interface LoginViewController ()
 
 @end
@@ -42,7 +46,6 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 -(void)login{
@@ -61,23 +64,13 @@
         return;
     }
     
-    NSLog(@"username = %@ pwd = %@" , userName , pwd);
-    
-//     NSURL *url = [NSURL URLWithString:@"http://www.iyours.com.cn/mobile/index/login/"];
-//    ASIFormDataRequest *request=[ASIFormDataRequest requestWithURL:url];
-//    [request setPostValue:userName  forKey:@"userName"];
-//    [request setPostValue:pwd forKey:@"password"];
-//    [request setDelegate:self];
-//    [request startAsynchronous];
-//    [DLLWaitingView showWithAnimated:YES];
-    
-    
-    MainTabBarController *main = [[MainTabBarController alloc] init];
-    //设定转场动画 4种样式
-    [main setModalTransitionStyle:UIModalTransitionStyleFlipHorizontal];
-    [self presentViewController:main animated:YES completion:nil];
-
-    
+    NSURL *url = [NSURL URLWithString:@"http://www.iyours.com.cn/mobile/index/login/"];
+    ASIFormDataRequest *request=[ASIFormDataRequest requestWithURL:url];
+    [request setPostValue:userName  forKey:@"userName"];
+    [request setPostValue:pwd forKey:@"password"];
+    [request setDelegate:self];
+    [request startAsynchronous];
+    [DLLWaitingView showWithAnimated:YES];
 }
 
 - (void)requestFinished:(ASIHTTPRequest *)request
@@ -86,28 +79,44 @@
     
     // 获取文本数据时使用
     NSString *responseString = [request responseString];
-    
+    NSLog(@"responseString = %@" , responseString);
     
     NSMutableDictionary *dict = [responseString JSONValue];
     NSNumber *state = [dict objectForKey:@"state"];
+    NSInteger flag = [state integerValue];
     
-    NSArray *array = [dict allValues];
-    NSLog(@"responseString = %@" , responseString);
-    NSLog(@"dict = %@" , dict);
-    NSLog(@"state = %@" , state);
-    NSLog(@"array = %@" , array);
-    
-    
-    // 在抓取时使用二进制数据
-    //    NSData *responseData = [request responseData];
-    //    NSLog(@"responseData = %@" , responseData);
-    
-    
-    MainTabBarController *main = [[MainTabBarController alloc] init];
-    //设定转场动画 4种样式
-    [main setModalTransitionStyle:UIModalTransitionStyleFlipHorizontal];
-    [self presentViewController:main animated:YES completion:nil];
+    if(flag == 1){
+        [MBProgressHUD toastText:@"登录成功"];
+        dict = [dict objectForKey:@"userInfo"];
+        
+        UserInfo *user = [[UserInfo alloc] init];
+        user.userID = [dict objectForKey:@"userid"];
+        user.token = [dict objectForKey:@"token"];
+        user.username = [dict objectForKey:@"username"];
+        user.email = [dict objectForKey:@"email"];
+        user.shengId = [dict objectForKey:@"shengId"];
+        user.shengName = [dict objectForKey:@"shengName"];
+        user.cityId = [dict objectForKey:@"cityid"];
+        user.cityName = [dict objectForKey:@"cityName"];
+        user.countyId = [dict objectForKey:@"countyid"];
+        user.countyName = [dict objectForKey:@"countyname"];
+        user.schoolId = [dict objectForKey:@"schoolid"];
+        user.schoolName = [dict objectForKey:@"schoolName"];
+        
+        AppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+        delegate.user = user;
 
+        
+        MainTabBarController *main = [[MainTabBarController alloc] init];
+        //设定转场动画 4种样式
+        [main setModalTransitionStyle:UIModalTransitionStyleCrossDissolve];
+        [self presentViewController:main animated:YES completion:nil];
+    }else{
+        NSString *message = [dict objectForKey:@"message"];
+        [MBProgressHUD toastText:message];
+    }
+    
+   
     
 }
 
