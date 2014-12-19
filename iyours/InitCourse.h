@@ -10,11 +10,15 @@
 
 @interface InitCourse : NSObject
 
-+ (BOOL)initWithParameters:(NSString *)nUserName
+@property BOOL result;
+@property NSString *userId;
+
+
+- (BOOL)initWithParameters:(NSString *)nUserId
                   andToken:(NSString *)token;
-- (BOOL) saveCourseInfo:(NSArray *) infoArray;
-- (BOOL) saveCategory:(NSArray *) cateArray;
-- (BOOL) saveProperty:(NSArray *) propArray;
+- (BOOL) saveCourseInfoToLocal:(NSArray *) courseArray;
+- (BOOL) saveCategoryToLocal:(NSArray *) cateArray;
+- (BOOL) savePropertyToLocal:(NSArray *) propArray;
 
 
 
