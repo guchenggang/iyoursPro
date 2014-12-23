@@ -17,6 +17,7 @@
 #import "MBProgressHUD+Toast.h"
 #import "UserInfo.h"
 #import "AppDelegate.h"
+#import "InitCourse.h"
 
 @interface LoginViewController ()
 
@@ -111,6 +112,10 @@
         //设定转场动画 4种样式
         [main setModalTransitionStyle:UIModalTransitionStyleCrossDissolve];
         [self presentViewController:main animated:YES completion:nil];
+        
+        InitCourse *initCourse = [[InitCourse alloc] init];
+        [initCourse initWithParameters:@"27" andToken:@"111111"];
+
     }else{
         NSString *message = [dict objectForKey:@"message"];
         [MBProgressHUD toastText:message];

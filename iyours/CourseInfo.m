@@ -1,7 +1,7 @@
 //
-//  CourseInfo.m
-//  iyours
+//  课程信息实体类
 //
+
 //  Created by gcg on 14-12-17.
 //  Copyright (c) 2014年 o-star. All rights reserved.
 //

@@ -112,6 +112,7 @@
 		C49D26C01A3591E100FA192F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C49D26BF1A3591E100FA192F /* Images.xcassets */; };
 		C49D26C31A3591E100FA192F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C49D26C11A3591E100FA192F /* LaunchScreen.xib */; };
 		C49D26CF1A3591E100FA192F /* iyoursTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C49D26CE1A3591E100FA192F /* iyoursTests.m */; };
+		C4A068671A48F79F001ADA6F /* ResProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A068661A48F79F001ADA6F /* ResProperty.m */; };
 		C4A09A411A44172E00150A37 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A09A2F1A44172E00150A37 /* AFHTTPRequestOperation.m */; };
 		C4A09A421A44172E00150A37 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A09A311A44172E00150A37 /* AFHTTPRequestOperationManager.m */; };
 		C4A09A431A44172E00150A37 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A09A331A44172E00150A37 /* AFHTTPSessionManager.m */; };
@@ -335,6 +336,8 @@
 		C49D26C81A3591E100FA192F /* iyoursTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iyoursTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C49D26CD1A3591E100FA192F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C49D26CE1A3591E100FA192F /* iyoursTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iyoursTests.m; sourceTree = "<group>"; };
+		C4A068651A48F79F001ADA6F /* ResProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResProperty.h; sourceTree = "<group>"; };
+		C4A068661A48F79F001ADA6F /* ResProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResProperty.m; sourceTree = "<group>"; };
 		C4A09A2E1A44172E00150A37 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
 		C4A09A2F1A44172E00150A37 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
 		C4A09A301A44172E00150A37 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
@@ -503,6 +506,8 @@
 				6F8A18C11A39ACB0003E5859 /* ResourceCategory.m */,
 				6F62709D1A43BA7C001C63EE /* UserInfo.h */,
 				6F62709E1A43BA7C001C63EE /* UserInfo.m */,
+				C4A068651A48F79F001ADA6F /* ResProperty.h */,
+				C4A068661A48F79F001ADA6F /* ResProperty.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -1011,6 +1016,7 @@
 				6FBE493E1A381DCE003E490E /* ASICloudFilesContainer.m in Sources */,
 				6FBE49421A381DCE003E490E /* ASICloudFilesObjectRequest.m in Sources */,
 				6F1C00531A3EAC2F0043B88D /* LoginViewController.m in Sources */,
+				C4A068671A48F79F001ADA6F /* ResProperty.m in Sources */,
 				6F8A18F01A39C29D003E5859 /* Cell.m in Sources */,
 				6FBE493D1A381DCE003E490E /* ASICloudFilesCDNRequest.m in Sources */,
 				C4E9D25A1A400ECE00056BB0 /* FMResultSet.m in Sources */,
